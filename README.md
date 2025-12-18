@@ -8,7 +8,7 @@ Este projeto tem como objetivo integrar dados de clima e solo para análises de 
 - Características do solo (AD_UM, Classe_AD, etc.)
 - Dados experimentais de ensaios de arroz (genótipos, localização, repetições, etc.)
 
-O pipeline inclui aquisição de dados climáticos da NASA POWER, processamento de dados de solo a partir de shapefiles do AD_Brasil, e junção final com os dados da embrapa.
+O arquvo inclui aquisição de dados climáticos da NASA POWER, processamento de dados de solo a partir de shapefiles do AD_Brasil, e junção final com os dados da embrapa.
 
 ---
 
