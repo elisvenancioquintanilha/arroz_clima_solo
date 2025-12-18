@@ -8,7 +8,7 @@ Este projeto tem como objetivo integrar dados de clima e solo para análises de 
 - Características do solo (AD_UM, Classe_AD, etc.)
 - Dados experimentais de ensaios de arroz (genótipos, localização, repetições, etc.)
 
-O pipeline inclui aquisição de dados climáticos da NASA POWER, processamento de dados de solo a partir de shapefiles do AD_Brasil, e junção final com os dados experimentais.
+O pipeline inclui aquisição de dados climáticos da NASA POWER, processamento de dados de solo a partir de shapefiles do AD_Brasil, e junção final com os dados da embrapa.
 
 ---
 
@@ -20,8 +20,7 @@ scripts/
   03_merge_arroz_solo_clima.R # Junção dos dados
 data/
   dados_arroz.csv
-  dados_clima_solo_v03_dezembro.xlsx
-  shapefiles/AD_Brasil.shp
+
 
 
 
@@ -74,9 +73,9 @@ data/
 
 - `tidyverse`, `dplyr`, `readxl`, `writexl`, `stringr`
 - `nasapower` (extração de dados climáticos)
-- `lubridate` (manipulação de datas)
+- `lubridate` (manipulação de dados)
 - `furrr`, `future` (processamento paralelo)
-- `sf`, `terra`, `geobr`, `ggplot2`, `purrr` (manipulação e visualização espacial)
+- `sf`, `terra`, `geobr`, `ggplot2`, `purrr` (manipulação e visualização)
 
 ---
 
