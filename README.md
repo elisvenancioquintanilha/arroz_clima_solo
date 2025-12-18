@@ -103,9 +103,7 @@ data/
 
 ---
 
-## 7. Contato / Autoria
-
-- **Elis Regina Venancio Quintanilha**
+## 7. Contato
 - E-mail: [elisvenancio22@gmail.com]
 
 
