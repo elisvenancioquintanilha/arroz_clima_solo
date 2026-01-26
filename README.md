@@ -1,12 +1,12 @@
-# Projeto: Integração de Dados Climáticos e de Solo para Cultivo de Arroz
+# Projeto: Dados Climáticos e de Solo para Cultivo de Arroz
 
 ## 1. Objetivo
 
-Este projeto tem como objetivo integrar dados de clima e solo para análises de desempenho de cultivares de arroz no Brasil. A base final combina informações de:
+Este projeto integra dados de clima e solo para análises de cultivares de arroz no Brasil. A base final combina informações de:
 
 - Condições climáticas por fases do ciclo do arroz
 - Características do solo (AD_UM, Classe_AD, etc.)
-- Dados experimentais de ensaios de arroz (genótipos, localização, repetições, etc.)
+- Dados de ensaios de arroz (genótipos, localização, repetições, etc.)
 
 O arquvo inclui aquisição de dados climáticos da NASA POWER, processamento de dados de solo a partir de shapefiles do AD_Brasil, e junção final com os dados da embrapa.
 
@@ -29,7 +29,7 @@ data/
 ## 3. Scripts
 
 ### 3.1 `01_climate_by_stage.R`
-- Objetivo: extrair dados climáticos por fase do ciclo do arroz (vegetativa, reprodutiva e enchimento de grão) e calcular estatísticas agregadas.
+- Objetivo: extrair dados climáticos por fase do ciclo do arroz (vegetativa, reprodutiva e enchimento de grão) e calcular estatísticas.
 - Fontes: NASA POWER API (`nasapower`).
 - Principais etapas:
   1. Carregamento dos dados experimentais (`dados_arroz.csv`).
@@ -52,7 +52,7 @@ data/
   6. Exportação: `dados_clima_solo_v03_dezembro.xlsx` e `dados_final_corrigido_completo.shp`.
 
 ### 3.3 `03_merge_arroz_solo_clima.R`
-- Objetivo: integrar os dados experimentais de arroz com os dados climáticos e de solo processados.
+- Objetivo: integrar os dados de arroz com os dados climáticos e de solo processados.
 - Principais etapas:
   1. Leitura de `dados_arroz.csv` e aplicação da função de pré-processamento (`data_processing_elis2.R`).
   2. Leitura de `dados_clima_solo_v03_dezembro.xlsx`.
